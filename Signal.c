@@ -17,7 +17,6 @@ void main(){
   signal(SIGINT,sighandler);
   signal(SIGUSR1, sighandler);
   while(1){
-    kill(getpid(), SIGUSR1);
     printf("PID: %d\n", getpid());
     sleep(1);
   }
