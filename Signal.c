@@ -16,7 +16,7 @@ static void sighandler(int signo){
     
     exit(0);
   }
-  if(signo == SIGUSR1) printf("Parent PID: %d, " , getppid());
+  if(signo == SIGUSR1) printf("Parent PID: %d\n" , getppid());
 }
 
 void main(){
